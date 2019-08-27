@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">Market
+    </string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title"></string>
+    <string name="nav_header_subtitle">Cafe Bazaar</string>
+    <string name="nav_header_desc">Cafe Bazaar</string>
+    <string name="action_settings">تنظیمات</string>
+
+
+    <string name="menu_home">خانه</string>
+    <string name="menu_apps">برنامه ها</string>
+    <string name="menu_tele_apps">طلگرام</string>
+    <string name="menu_games">بازی ها</string>
+    <string name="menu_categories">Categories</string>
+    <string name="menu_share">اشتراک گذاری</string>
+    <string name="menu_about">About</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search">Search</string>
+
+
+    <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
+    <string name="menu_settings">تنظیمات</string>
+    <string name="menu_google_play_tops">برنامه های برتر ایران</string>
+    <string name="open_in_bazar">باز در وب</string>
+
+    <string name="conn_failed">ارتباط ناموفق بود</string>
+    <string name="unknow_error">خطای ناشناخته</string>
+    <string name="retry_again">دوباره امتحان کنید</string>
+    <string name="share_app">اشتراک گذاری</string>
+
+    <string name="downlod_on_telegram">دانلود در تلگراف</string>
+
+    <string name="banner_ad_unit">ca-app-pub-9793090354879392/6416050214</string>
+
+    <string name="speak_now">Speak now</string>
+    <string name="menu_fav">مورد علاقه</string>
+    <string name="no_favorite_found">هیچ موردی یافت نشد</string>
+    <string name="delete_app">حذف</string>
+    <string name="title_activity_main_two">MainTwoActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="menu_join_telegram_channel">پیوستن به کانال</string>
+    <string name="logout">خروج</string>
+    <string name="sujjested_tet">برای شما پیشنهاد شده است</string>
+    <string name="recomended">توصیه شده برای شما</string>
+    <string name="sign_in_with_google">SIGN IN WITH GOOGLE</string>
+    <string name="menu_vpn">vpn</string>
+
+
+</resources>

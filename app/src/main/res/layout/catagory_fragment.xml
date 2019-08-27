@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+
+
+
+    <LinearLayout
+        android:id="@+id/errorView"
+        android:visibility="invisible"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_margin="8dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_ofline"
+            android:id="@+id/statusImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:gravity="center"
+            android:textColor="#80000000"
+            android:text="@string/conn_failed"
+            android:id="@+id/statusTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:padding="8dp"
+            android:background="@color/colorAccent"
+            android:layout_margin="8dp"
+            android:layout_gravity="center"
+            android:textColor="#fff"
+            android:text="@string/conn_failed"
+            android:id="@+id/retryButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <View
+        android:layout_gravity="top"
+        android:background="@drawable/shaddow_belpw"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"/>
+
+     <androidx.recyclerview.widget.RecyclerView
+            android:visibility="invisible"
+            android:id="@+id/appListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+</FrameLayout>

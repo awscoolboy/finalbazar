@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ir.cafebazar.et.ui.activity.MainTwoActivity">
+
+
+
+
+        <fragment
+            android:layout_above="@+id/bottomNav"
+            android:layout_marginBottom="0dp"
+            android:layout_width="match_parent"
+            android:id="@+id/baseFragment"
+            android:layout_height="match_parent"
+            tools:context=".ui.MainActivity"
+            app:defaultNavHost="true"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            app:navGraph="@navigation/nav_graph"/>
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_alignParentBottom="true"
+            app:elevation="8dp"
+            android:background="#fff"
+            android:theme="@style/BottomNavTheme"
+            android:elevation="8dp"
+            app:labelVisibilityMode="unlabeled"
+            android:id="@+id/bottomNav"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:menu="@menu/bottom_nav_menu"/>
+
+
+
+</RelativeLayout>

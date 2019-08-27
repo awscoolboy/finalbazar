@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <ImageView
+        android:layout_gravity="end"
+        android:transitionName="profile"
+        android:id="@+id/app_logo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:maxLines="2"
+        android:gravity="right"
+        android:id="@+id/app_title"
+        android:layout_width="match_parent"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:ellipsize="end"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="120dp" />
+
+    <TextView
+        android:layout_marginBottom="16dp"
+        android:layout_gravity="bottom"
+        android:maxLines="2"
+        android:gravity="right"
+        android:id="@+id/app_dev"
+        android:layout_width="match_parent"
+        android:textColor="@color/colorAccent"
+        android:textSize="14sp"
+        android:ellipsize="end"
+        android:textStyle="normal"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="120dp"
+        />
+
+
+</FrameLayout>

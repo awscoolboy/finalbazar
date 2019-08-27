@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_gravity="center_vertical"
+        android:textStyle="bold"
+        android:padding="16dp"
+        android:id="@+id/rank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/ic_star"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_marginEnd="56dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="#000"
+                android:textSize="14sp"
+                android:padding="8dp"
+                android:ellipsize="end"
+                android:lines="1"
+                android:layout_gravity="top|left"
+                android:textStyle="bold"
+                android:id="@+id/titile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Clash of clanst"/>
+
+            <TextView
+                android:textSize="11sp"
+                android:gravity="top"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="cool"
+                android:padding="4dp"
+                android:textStyle="italic"
+                android:id="@+id/devloper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_gravity="right|center_vertical"
+            android:padding="16dp"
+            android:src="@drawable/ic_more"
+            android:id="@+id/more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </FrameLayout>
+
+
+
+</LinearLayout>

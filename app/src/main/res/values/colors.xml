@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#f5f5f5</color>
+    <color name="colorAccent">#27A063</color>
+    <color name="placeholder">#27A063</color>
+
+
+    <style name="BottomNavTheme" parent="AppTheme">
+        <item name="colorPrimary">@color/colorAccent</item>
+    </style>
+
+
+
+</resources>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1070451046966",
+    "firebase_url": "https://bazarapp-8a488.firebaseio.com",
+    "project_id": "bazarapp-8a488",
+    "storage_bucket": "bazarapp-8a488.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1070451046966:android:17a87a3c779c685c",
+        "android_client_info": {
+          "package_name": "bazar.android.app.market"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1070451046966-auflb94hraf5u6jd7ovp3i2u64v6imvn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGvjZK9k87AlpAEYZbKCkPn3z2dbCttHE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1070451046966-auflb94hraf5u6jd7ovp3i2u64v6imvn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

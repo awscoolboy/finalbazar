@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_marginTop="16dp"
+    android:layout_gravity="center_horizontal"
+    android:layout_height="wrap_content">
+
+
+    <Button
+        android:padding="8dp"
+        android:drawablePadding="8dp"
+        android:drawableStart="@drawable/google_play_24"
+        android:layout_gravity="bottom"
+        android:background="#fff"
+        android:textColor="#000"
+        android:id="@+id/open_in_play"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="نصب"
+        />
+
+
+    <Button
+        android:padding="8dp"
+        android:drawablePadding="8dp"
+        android:drawableStart="@drawable/bazar_24"
+        android:layout_gravity="bottom"
+        android:background="#fff"
+        android:textColor="#000"
+        android:id="@+id/open_in_cffe_app"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="نصب"
+        />
+
+    <Button
+        android:padding="8dp"
+        android:drawablePadding="8dp"
+        android:drawableStart="@drawable/chrome_24"
+        android:layout_gravity="bottom"
+        android:background="#fff"
+        android:textColor="#000"
+        android:id="@+id/open_in_cafe_web"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="نصب"
+        />
+
+
+
+</LinearLayout>

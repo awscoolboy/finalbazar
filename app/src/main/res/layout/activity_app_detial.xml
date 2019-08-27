@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">
+
+
+
+            <androidx.appcompat.widget.Toolbar
+                app:layout_scrollFlags="scroll|enterAlways"
+                app:navigationIcon="@drawable/ic_arrow_back"
+                android:id="@+id/toolbar"
+                android:background="#fff"
+                app:titleTextColor="#000"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin" />
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/errorView"-->
+        <!--android:visibility="invisible"-->
+        <!--android:layout_marginBottom="60dp"-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <!--<ImageView-->
+            <!--android:layout_margin="8dp"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:src="@drawable/ic_ofline"-->
+            <!--android:id="@+id/errorImage"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+
+        <!--<TextView-->
+            <!--android:gravity="center"-->
+            <!--android:textColor="#80000000"-->
+            <!--android:text="@string/conn_failed"-->
+            <!--android:id="@+id/errorText"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content" />-->
+
+        <!--<Button-->
+            <!--android:padding="8dp"-->
+            <!--android:background="@color/colorPrimary"-->
+            <!--android:layout_margin="8dp"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:textColor="#fff"-->
+            <!--android:text="@string/conn_failed"-->
+            <!--android:id="@+id/retryButton"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+
+    <!--</LinearLayout>-->
+
+
+    <!--<ProgressBar-->
+        <!--android:visibility="gone"-->
+        <!--android:id="@+id/progressBar"-->
+        <!--android:layout_marginBottom="60dp"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content" />-->
+
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+            android:visibility="visible"
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+    <com.google.android.gms.ads.AdView
+        android:layout_gravity="bottom|center_horizontal"
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/banner_ad_unit">
+    </com.google.android.gms.ads.AdView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

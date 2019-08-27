@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="ir.cafebazar.et.ui.fragments.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/ic_home_fragment">
+
+
+        <action
+            android:id="@+id/next_action"
+            app:destination="@+id/detialFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <argument
+            android:name="touch_pos"
+            android:defaultValue="-1"
+            app:argType="integer" />
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/detialFragment"
+        android:name="ir.cafebazar.et.ui.fragments.DetialFragment"
+        android:label="fragment_detial"
+        tools:layout="@layout/fragment_detial" />
+
+    <fragment
+        android:id="@+id/appsFragment"
+        android:name="ir.cafebazar.et.ui.fragments.AppsFragment"
+        android:label="AppsFragment">
+
+        <action
+            android:id="@+id/action_appsFragment2_to_detialFragment"
+            app:destination="@id/detialFragment" />
+
+    </fragment>
+
+
+
+
+    <fragment
+        android:id="@+id/nav_games"
+        android:name="ir.cafebazar.et.ui.fragments.GamePagerFragment"
+        android:label="GamesFragment">
+        <action
+            android:id="@+id/action_gamesFragment_to_detialFragment"
+            app:destination="@id/detialFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/telegramApps"
+        android:name="ir.cafebazar.et.ui.TelegramApps"
+        android:label="TelegramApps">
+        <action
+            android:id="@+id/action_telegramApps_to_detialFragment"
+            app:destination="@id/detialFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_google_play_top"
+        android:name="ir.cafebazar.et.ui.fragments.GooglePlayTop"
+        android:label="google_play_top">
+        <action
+            android:id="@+id/action_google_play_top_to_detialFragment"
+            app:destination="@id/detialFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_favorite"
+        android:name="ir.cafebazar.et.ui.fragments.FavoriteFragment"
+        android:label="FavoriteFragment" />
+    <fragment
+        android:id="@+id/nav_apps"
+        android:name="ir.cafebazar.et.ui.fragments.AppsPagerFragment"
+        android:label="category_view_pager"
+        tools:layout="@layout/category_view_pager" />
+
+
+</navigation>
