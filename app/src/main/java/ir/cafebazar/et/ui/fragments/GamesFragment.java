@@ -44,6 +44,7 @@ import ir.cafebazar.et.Models.collections.CollDataModel;
 import ir.cafebazar.et.Models.collections.Subcollection;
 import ir.cafebazar.et.Models.section.RecoSectionModel;
 import ir.cafebazar.et.Models.section.SectionDataModel;
+import ir.cafebazar.et.bazar.models.AppRow;
 import ir.cafebazar.et.network.BaseApiController;
 import ir.cafebazar.et.ui.activity.AppDetailActivity;
 import ir.cafebazar.et.ui.activity.ColListActivity;
@@ -53,6 +54,10 @@ import ir.cafebazar.et.util.NoAnimationItemAnimator;
 
 
 public class GamesFragment extends Fragment implements BaseApiController.ApiCallBack{
+
+
+
+
 
     private ProgressBar progressBar;
     private RecyclerView listView;
@@ -87,6 +92,10 @@ public class GamesFragment extends Fragment implements BaseApiController.ApiCall
         if(getArguments()!=null){
             posation = getArguments().getInt("pos");
             cat_id  =  getArguments().getString("cat_id");
+            if(getArguments() != null){
+                name = getArguments().getString("cat");
+                slug = getArguments().getString("slug");
+            }
         }
     }
 
@@ -131,6 +140,8 @@ public class GamesFragment extends Fragment implements BaseApiController.ApiCall
 
         BaseApiController.getInstance().getSubCategoriesForMainCategory(cat_id,this);
     }
+
+
 
     @Override
     public void didReceiveData(int type, Object... object) {

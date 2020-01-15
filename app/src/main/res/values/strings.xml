@@ -1,11 +1,11 @@
 <resources>
-    <string name="app_name">Market
+    <string name="app_name">TeleBazar
     </string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title"></string>
-    <string name="nav_header_subtitle">Cafe Bazaar</string>
-    <string name="nav_header_desc">Cafe Bazaar</string>
+    <string name="nav_header_subtitle">TeleBazar</string>
+    <string name="nav_header_desc">TeleBazar</string>
     <string name="action_settings">تنظیمات</string>
 
 
@@ -25,7 +25,7 @@
 
     <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
     <string name="menu_settings">تنظیمات</string>
-    <string name="menu_google_play_tops">برنامه های برتر ایران</string>
+    <string name="menu_google_play_tops">فیلم و سریال</string>
     <string name="open_in_bazar">باز در وب</string>
 
     <string name="conn_failed">ارتباط ناموفق بود</string>

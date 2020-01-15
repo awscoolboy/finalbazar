@@ -90,6 +90,7 @@ public class AppsFragment extends Fragment implements BaseApiController.ApiCallB
         }
     }
 
+
     public static AppsFragment getInstance(int pos,String cat_id){
         AppsFragment appsFragment = new AppsFragment();
         Bundle bundle = new Bundle();
@@ -120,7 +121,7 @@ public class AppsFragment extends Fragment implements BaseApiController.ApiCallB
         retryButton.setOnClickListener(viewe -> {
             animateProgressWithError();
             new Handler().postDelayed(() -> {
-                BaseApiController.getInstance().getSubCategoriesForMainCategory(cat_id,this);
+               // BaseApiController.getInstance().getSubCategoriesForMainCategory(cat_id,this);
             },3000);
         });
 

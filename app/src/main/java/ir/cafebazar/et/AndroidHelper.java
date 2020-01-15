@@ -27,8 +27,6 @@ public class AndroidHelper {
     public static final int TYPE_ROAMING = 2;
 
     public static float density = 1;
-    
-
 
     public static void openAppRating(Context context,String appId) {
         // you can also use BuildConfig.APPLICATION_ID

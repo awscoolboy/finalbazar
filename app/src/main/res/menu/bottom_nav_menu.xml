@@ -2,17 +2,6 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
 
-    <item
-        android:id="@+id/nav_home"
-        android:icon="@drawable/ic_home"
-        android:title="@string/menu_home" />
-
-
-    <item
-        android:id="@+id/nav_proxy"
-        android:icon="@drawable/ic_vpn"
-        android:title="@string/menu_vpn"/>
-
 
     <item
         android:id="@+id/nav_apps"
@@ -26,14 +15,16 @@
 
 
     <item
+        android:id="@+id/nav_google_play_top"
+        android:icon="@drawable/ic_movie_black_24dp"
+        android:title="@string/menu_google_play_tops" />
+
+
+    <item
         android:id="@+id/nav_favorite"
         android:icon="@drawable/ic_star_nav"
         android:title="@string/menu_fav"/>
 
 
-    <item
-        android:id="@+id/nav_google_play_top"
-        android:icon="@drawable/ic_googel_play"
-        android:title="@string/menu_google_play_tops" />
 
 </menu>

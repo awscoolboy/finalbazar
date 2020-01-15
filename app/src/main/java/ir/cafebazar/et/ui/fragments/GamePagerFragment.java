@@ -31,6 +31,7 @@ import apps.cafebazaar.all.apps.R;
 import ir.cafebazar.et.AndroidHelper;
 import ir.cafebazar.et.Models.Categories;
 import ir.cafebazar.et.auth.AccountBottomSheetDialog;
+import ir.cafebazar.et.bazar.models.Category;
 import ir.cafebazar.et.network.BaseApiController;
 import ir.cafebazar.et.ui.activity.SearchActivity;
 
@@ -44,7 +45,8 @@ public class GamePagerFragment extends Fragment {
     private TextView toolbarTextView;
 
 
-    private List<ir.cafebazar.et.Models.Categories> categoryList=new ArrayList<>();
+    private ArrayList<Category> categoryList = new ArrayList<>();
+
 
     private void initView(View view){
         toolbar = view.findViewById(R.id.toolbar);
@@ -89,7 +91,6 @@ public class GamePagerFragment extends Fragment {
 
         profileImageView.setOnClickListener(v -> {
 
-
             AccountBottomSheetDialog accountBottomSheetDialog = new AccountBottomSheetDialog();
             accountBottomSheetDialog.show(getChildFragmentManager(),"account_sheet");
         });
@@ -97,21 +98,22 @@ public class GamePagerFragment extends Fragment {
 
 
         toolbarTextView.setText(getString(R.string.menu_games));
-        getData();
+        getCategory();
     }
 
 
-    private void getData(){
-        BaseApiController.getInstance().getCategories(true,new BaseApiController.ApiCallBack() {
+
+
+    private void getCategory(){
+        BaseApiController.getInstance().getBazaarCategories(true,new BaseApiController.ApiCallBack() {
             @Override
-            public void didReceiveData( int type ,Object... object) {
-                if(object==null) {
-                    //displayErroMessage();
-                    return;
-                }
-                if(type== BaseApiController.didReceivedGameCategory && object[0] instanceof List){
-                    categoryList=(List<Categories>)object[0];
+            public void didReceiveData(int type, Object... object) {
+
+                if(object != null && object.length >0){
+                    categoryList = (ArrayList<Category>)object[0];
                     setUpViewPagers();
+
+
                 }
             }
 
@@ -120,6 +122,7 @@ public class GamePagerFragment extends Fragment {
 
             }
         });
+
     }
 
 

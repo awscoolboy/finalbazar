@@ -21,16 +21,18 @@
 
 
         <item
+            android:visible="false"
+            android:id="@+id/nav_tele_apps"
+            android:icon="@drawable/ic_telegeram_apps"
+            android:title="@string/menu_tele_apps" />
+
+        <item
             android:id="@+id/nav_favorite"
             android:icon="@drawable/ic_favorite"
             android:title="@string/menu_fav"/>
 
 
-        <item
-            android:visible="false"
-            android:id="@+id/nav_tele_apps"
-            android:icon="@drawable/ic_telegeram_apps"
-            android:title="@string/menu_tele_apps" />
+
 
 
 

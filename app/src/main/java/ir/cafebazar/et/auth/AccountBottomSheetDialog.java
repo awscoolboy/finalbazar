@@ -66,10 +66,6 @@ public class AccountBottomSheetDialog extends BottomSheetDialogFragment {
 
     }
 
-
-
-
-
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -112,13 +108,12 @@ public class AccountBottomSheetDialog extends BottomSheetDialogFragment {
             }
         }
 
+
         @Override
         public int getItemViewType(int position) {
 
             if (position == 0) {
-
                 return account_row;
-
             } else if (position == 1) {
                 return share_app_row;
             } else if (position == 2) {
@@ -213,7 +208,6 @@ public class AccountBottomSheetDialog extends BottomSheetDialogFragment {
                         AppPreference.logout(getActivity());
                     }
                 });
-
 
             }
 

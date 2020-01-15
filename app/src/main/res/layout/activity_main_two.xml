@@ -8,9 +8,6 @@
     android:layout_height="match_parent"
     tools:context="ir.cafebazar.et.ui.activity.MainTwoActivity">
 
-
-
-
         <fragment
             android:layout_above="@+id/bottomNav"
             android:layout_marginBottom="0dp"
@@ -22,19 +19,17 @@
             android:name="androidx.navigation.fragment.NavHostFragment"
             app:navGraph="@navigation/nav_graph"/>
 
-
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:layout_alignParentBottom="true"
             app:elevation="8dp"
             android:background="#fff"
             android:theme="@style/BottomNavTheme"
             android:elevation="8dp"
-            app:labelVisibilityMode="unlabeled"
+            app:labelVisibilityMode="labeled"
             android:id="@+id/bottomNav"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:menu="@menu/bottom_nav_menu"/>
-
 
 
 </RelativeLayout>
